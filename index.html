@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
@@ -17,6 +17,11 @@
     <header class="page-header">
         <div class="header container">
             <a class="logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-burger" width="40" height="40">
+                  <use href="./img/symbol-defs.svg#menu-burger"></use>
+                </svg>
+              </button>
             <nav class="navigation">
                 <ul class="menu list">
                     <li class="menu__item"><a class="menu__link menu--current link " href="./index.html">Студія</a></li>
@@ -473,6 +478,35 @@
                 </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-burger" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu list">
+          <li><a href="" class="mobile-link link">Студія</a></li>
+          <li><a href="" class="mobile-link link">Портфоліо</a></li>
+          <li><a href="" class="mobile-link link">Контакти</a></li>
+        </ul>
+
+        <ul class="mobile-contact list">
+            <li><a href="" class="mobile-contact__link mobile-contact__link--tel link">+38 096 111 11 11</a></li>
+            <li><a href="" class="mobile-contact__link link">info@devstudio.com</a></li>
+        </ul>
+    </div>
+
+  
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+
+      <script defer src="script/mobile-menu.js"></script>
       <script src="./script/modal.js"></script>
 </body>
 

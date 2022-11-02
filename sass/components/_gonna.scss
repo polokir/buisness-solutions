@@ -1,6 +1,7 @@
 .gonna{
     padding-top: 0;
-
+    display: none;
+   
     &__title{
         font-weight: 700;
         font-size: 36px;
@@ -9,13 +10,18 @@
         text-align: center;
         margin-bottom: 50px;
     }
-
+    @media screen and(min-width:1200px){
+        display: block;
+    }
     &__list{
-        display: flex;
+        @media screen and(min-width:1200px) {
+            display: flex; 
+        }
     }
 
     &__item:not(:last-child){
         margin-right: 30px;
+       
     }
 
     &__item{
@@ -29,7 +35,7 @@
         line-height: 1.14; 
         display: flex;
         position: absolute;
-        width: 370px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         bottom: 0;

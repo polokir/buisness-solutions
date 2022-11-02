@@ -1,11 +1,6 @@
 .menu{ 
-    display: flex;
+    display: none;
     padding: 0;
-
-    &__item:not(:last-child){ 
-    margin-right: 50px;
-    } 
-
 
     &__link{ 
         font-family: 'Roboto';
@@ -22,6 +17,12 @@
         }
 
     }
+
+    
+    @media screen and(min-width:767px) {
+           display: flex;
+           gap: 50px;
+    }
 }
 
 .menu--current{
@@ -37,6 +38,7 @@
         height: 4px;
         border-radius: 2px;
         background-color:$hoverColor;
+
     }
 
 } 

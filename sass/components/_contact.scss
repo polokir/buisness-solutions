@@ -1,14 +1,7 @@
 .contact {
     text-decoration: none; 
-    display: flex;
+    display: none;
     margin-left: auto;
-
-    &__item:first-child{ 
-        text-decoration: none; 
-        margin-right: 30px;
-        
-    } 
-     
     &__link{ 
         font-family: 'Roboto', sans-serif; 
         text-decoration: none; 
@@ -16,11 +9,13 @@
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        padding: 32px 0;
         display: flex;
         align-items: center;
         transition: color $transitionDuration $animationTimingFunction;
-    
+        
+        @media screen and (min-width:768px) {
+            
+        }
     } 
     &__icon{
     margin-right: 10px;
@@ -32,4 +27,19 @@
     &__link:focus{
         color: $hoverColor;
     }
+
+    @media screen and (min-width:480px) {
+        display: none;
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
 }

@@ -13,8 +13,20 @@
     }
 
     &__list{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1,270px);
         gap: 30px;
+        justify-content: center;
+
+        @media screen and(min-width:768px) {
+            display: grid;
+            grid-template-columns: repeat(2,270px);
+        }
+
+        @media screen and(min-width:1200px) {
+            display: flex;
+            flex-direction: row; 
+        }
     }
 
     &__item{

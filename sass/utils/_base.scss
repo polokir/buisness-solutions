@@ -41,19 +41,32 @@ button{
     padding: 0;
     margin: 0;
 }
- .link{
+.link{
     text-decoration: none;
- }
+}
 .header{
     display: flex;
     align-items: center;
 }
 
-.container{
-    width: 1200px;
+.container {
+    width: 100%;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
-}
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
 
 .blue-txt{
     font-weight: 700;
