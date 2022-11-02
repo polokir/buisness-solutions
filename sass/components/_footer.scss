@@ -6,7 +6,10 @@
 .footer{
     
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
 
     &-logo{
         font-family: 'Raleway';
@@ -33,7 +36,7 @@
     }
 
     &__right{
-        margin-left:70px;
+        margin-left:auto;
     }
 
     &__list{

@@ -1,8 +1,19 @@
 .client{
     &__list{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,210px);
         gap: 30px;
         justify-content: center;
+
+        @media screen and(min-width:768px) {
+            display: grid;
+            grid-template-columns: repeat(3,226px);
+            gap: 30px;
+        }
+
+        @media screen and(min-width:1200px) {
+            display: flex;
+        }
     }
 
     &__icon{
@@ -15,7 +26,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 170px;
+        width: 100%;
+        @media screen and(min-width:1200px) {
+            width: 170px;
+        }
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
