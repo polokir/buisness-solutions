@@ -92,7 +92,7 @@
 
     &__box {
         position: relative;
-        width: 16px;
+        min-width: 16px;
         height:15px;
         overflow: hidden;
         border-radius: 1px;
@@ -125,9 +125,16 @@
         margin-left: 8px;
         cursor: pointer;
         color: $contactColor;
-        line-height: 1.714;
+        font-size: 12px;
+        line-height: 1.16;
         display: flex;
         align-items: center;
+
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
     }
     &__link{
         color: $hoverColor;

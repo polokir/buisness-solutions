@@ -1,7 +1,14 @@
 .menu{ 
     display: none;
     padding: 0;
-
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        margin-left: 91px;
+      }
     &__link{ 
         font-family: 'Roboto';
         display: block;
@@ -23,6 +30,11 @@
            display: flex;
            gap: 50px;
     }
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
 }
 
 .menu--current{

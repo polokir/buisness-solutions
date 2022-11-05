@@ -11,13 +11,33 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and(min-width:768px) and (max-width:1199px) {
+        flex-direction: row;
+        flex-wrap: wrap;    
+        gap: 0;    
+        align-items: baseline;
+    }
+
+    @media screen and(min-width:1200px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 0;
+    }
+
+    
     &-logo{
+        display: block;
+        text-align: center;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
         color: $secondFontColor;
         text-decoration: none;
+        @media screen and(min-width:1200px) {
+            text-align: left;
+        }
     }
     &__curent{
         transition: color $transitionDuration $animationTimingFunction;
@@ -28,15 +48,27 @@
     }
 
     &__right-title{
+        text-align: center;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         color: $secondFontColor;
+        @media screen and(min-width:1200px) {
+            text-align: left;
+        }
     }
 
-    &__right{
-        margin-left:auto;
+    &__left{
+        text-align: center;
+        @media screen  and(min-width:768px) {
+            margin-right: 165px;
+        }
+
+       @media screen  and(min-width:1200px) {
+        margin-right: 70px;
+        text-align: left;
+        }    
     }
 
     &__list{
@@ -69,11 +101,19 @@
 
     &__form{
         display: flex;
-        width: 570px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     &__email{
-        width: 358px;
+        width: 100%;
+        @media screen and(min-width:480px) {
+            width: 450px;
+        }
+        @media screen and(min-width:1200px) {
+            width: 358px;
+        }
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -81,6 +121,7 @@
         background: inherit;
         margin-right: 12px;
         outline: none;
+        margin-bottom: 20px;
     
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -95,10 +136,25 @@
 
 .form{
     &__footer{
-        margin-left: auto; 
+        @media screen and(min-width:768px) and(max-width:1199px) {
+            margin-top: 60px;
+        }
+        @media screen and(min-width:1200px) {
+            margin-left: auto;
+        }
+    }
+    &__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @media screen and(min-width:1200px) {
+            flex-direction: row;
+            align-items: baseline;
+        }
     }
 
     &__description{
+        text-align: center;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -107,6 +163,10 @@
         text-transform: uppercase;
         color:$secondFontColor;
         margin-bottom: 20px;
+        text-align: center;
+        @media screen and(min-width:1200px) {
+            text-align: left;
+        }
     }
    
 }
@@ -126,6 +186,8 @@
         line-height: 1.7;
         font-weight: 400;
         font-style: normal;
+       
+
     }
 
     &__first{
@@ -154,6 +216,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 
     &__icon{
         margin-left: 10px;

@@ -1,13 +1,14 @@
-.header{
-    display: flex;
-    align-items: center;
-    height: 60px;
-
+.page-header{
+    
     @media screen and(min-width:768px) {
         height: 80px;
     }
 }
 
+.header{
+    display: flex;
+    align-items: center;
+}
 
 .logo{ 
     text-decoration: none;
@@ -16,7 +17,7 @@
     font-size: 26px;
     line-height: 1.9;
     color:$mainColor;
-    margin-right: 93px;
+    
 } 
 
  

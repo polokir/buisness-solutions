@@ -5,6 +5,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
         padding: 200px 0;
         background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -12,70 +14,87 @@
     ),url(../img/hero-mobile.jpg);
     
     
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../img/hero-mobile@2x.jpg);
-      }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero-mobile-2x.jpg);
+  }
+
     
 
-    @media screen and (min-width:768px) {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),url(../img/header-tablet.jpg);
-        
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../img/header-tablet@2x.jpg);
-      }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/header-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/hero-tab-2x.jpg);
     }
+  }
 
-    @media screen and (min-width:1200px){
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),url(../img/imghero-picture.jpg);
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../img/imghero-picture@2x.jpg);
-      }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/heroBG.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/heroBg-2x.jpg);
     }
+    
+  }
 
    
     &__text{
         color: $secondFontColor; 
-        font-size:44px; 
+        font-size:26px; 
         text-transform: uppercase;
         letter-spacing: 0.06em;
         line-height: 1.36;
         font-weight: 900;
-        width: 696px;
         margin: 0 auto;
         margin-bottom: 30px;
-        @media (max-width:1200px) {
+
+        @media screen and (min-width:480px) {
+            color: $secondFontColor; 
+            font-size:26px; 
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            line-height: 1.36;
+            font-weight: 900;
             width: 360px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width:1200px) {
+            width: 696px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
-            font-size: 26px;
+            font-size: 44px;
             line-height: 1.62;
             text-align: center;
             letter-spacing: 0.06em;
