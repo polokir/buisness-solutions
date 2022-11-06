@@ -40,8 +40,13 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -241,7 +246,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  height: 581px;
+  height: 609px;
   background-color: #FFFFFF;
   border-radius: 4px;
   width: 300px;
@@ -254,6 +259,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 581px;
   }
 }
 .modal-title {
@@ -427,14 +433,14 @@ ul {
 
 .hero {
   background-color: #2F303A;
-  padding: 200px 0;
-  text-align: center;
+  padding: 118px 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
+  height: 400px;
+  text-align: center;
   margin: 0 auto;
-  padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -444,6 +450,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-tablet.jpg);
   }
 }
@@ -454,6 +461,9 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heroBG.jpg);
   }
 }
@@ -481,8 +491,9 @@ ul {
     line-height: 1.36;
     font-weight: 900;
     width: 360px;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -643,11 +654,17 @@ ul {
   }
 }
 .team__desc {
+  font-size: 28px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.1785714286;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__desc {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .team__img {
   width: 100%;
@@ -739,15 +756,16 @@ ul {
   color: #2196F3;
 }
 .client__title {
+  font-size: 28px;
   font-weight: 700;
-  font-size: 33px;
-  line-height: 1.16;
+  line-height: 1.1785714286;
   text-align: center;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
   .client__title {
     font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -756,23 +774,19 @@ ul {
   padding: 60px 0;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  justify-content: center;
-  align-items: center;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0;
     align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
@@ -813,8 +827,21 @@ ul {
     text-align: left;
   }
 }
+.footer__right {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__right {
+    display: block;
+    margin-bottom: 0;
+  }
+}
 .footer__left {
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__left {
@@ -1170,4 +1197,28 @@ ul {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+.mobile-soc {
+  display: flex;
+  gap: 10px;
+  margin-top: 64px;
+}
+
+.soc__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.soc_item:not(:last-child)::after {
+  content: "";
+  width: 22px;
+  height: 100%;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  color: #757575;
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */

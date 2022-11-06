@@ -24,9 +24,13 @@
     }
     
     &__desc{
+        font-size: 28px;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        line-height: calc(33/28);
+        @media screen and (min-width:1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+        }
         text-align: center;
         margin-bottom: 50px;
     }

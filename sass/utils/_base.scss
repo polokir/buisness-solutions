@@ -37,8 +37,12 @@ button{
 }
 
 .section{
+  padding: 60px 0;
+  @media screen and(min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  
 }
 
 
