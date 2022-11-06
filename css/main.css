@@ -1161,6 +1161,10 @@ ul {
   right: 16px;
 }
 
+.mobile--cur {
+  color: #2196F3 !important;
+}
+
 .mobile-menu {
   padding: 0;
   margin: 0;
