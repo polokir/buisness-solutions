@@ -16,6 +16,8 @@
     transition: color $transitionDuration $animationTimingFunction,
     background-color $transitionDuration $animationTimingFunction,
     box-shadow $transitionDuration $animationTimingFunction;
+    row-gap: 15px;
+    
 
     &:hover{
         background-color: $hoverColor;
@@ -32,8 +34,10 @@
     &-panel{
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 50px;
-
+        gap: 8px;
+        row-gap: 15px;
         flex-wrap: wrap;
 
         @media screen and (max-width: 767px) {
@@ -45,7 +49,4 @@
         }
     }
 
-    &__item:not(:last-child){
-        margin-right: 8px;
-    }
 }
