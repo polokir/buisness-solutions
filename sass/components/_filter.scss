@@ -33,6 +33,16 @@
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 767px) {
+          justify-content: flex-start;
+          margin-bottom: 40px;
+        }
+        @media screen and (max-width: 1199px) {
+          margin-bottom: 30px;
+        }
     }
 
     &__item:not(:last-child){
