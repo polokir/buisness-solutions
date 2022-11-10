@@ -17,50 +17,53 @@
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Portfolio</title>
   </head>
-  
+
   <body>
     <header class="page-header">
       <div class="container header">
-          <a class="logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
-          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-              <svg class="menu-burger" width="40" height="40">
-                <use href="./img/symbol-defs.svg#menu-burger"></use>
-              </svg>
-            </button>
-          <nav class="navigation">
-              <ul class="menu list">
-                  <li class="menu__item"><a class="menu__link menu--current link " href="./index.html">Студія</a></li>
-                  <li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфоліо</a></li>
-                  <li class="menu__item"><a class="menu__link link" href="">Контакти</a></li>
-              </ul>
-          </nav>
-          <ul class="contact list">               
-              <li class="contact__item">
-                  <a class="contact__link" href="mailto:info@devstudio.com">
-                      <svg  width='16' height="12" class="contact__icon">
-                          <use href="./img/symbol-defs.svg#icon-list"></use>
-                      </svg>
-                      info@devstudio.com
-                  </a>
-              </li>
-              <li class="contact__item">
-                  <a class="contact__link" href="tel:+380961111111"> 
-                  <svg  width="10"  height="16"  class="contact__icon">
-                      <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>                  
-                  +38 096 111 11 11
-              </a>
-              </li>
+        <a class="logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-burger" width="40" height="40">
+            <use href="./img/symbol-defs.svg#menu-burger"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu--current link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__item"><a class="menu__link link" href="">Контакти</a></li>
           </ul>
+        </nav>
+        <ul class="contact list">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12" class="contact__icon">
+                <use href="./img/symbol-defs.svg#icon-list"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg width="10" height="16" class="contact__icon">
+                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
-  </header>
+    </header>
 
     <main>
       <h1 class="portfolio-title">portfolio</h1>
 
       <section class="goods section">
         <div class="container">
-          
           <ul class="btn-panel list">
             <li class="btn__item"><button class="btn" type="button">Усі</button></li>
             <li class="btn__item"><button class="btn" type="button">Веб-сайти</button></li>
@@ -68,126 +71,310 @@
             <li class="btn__item"><button class="btn" type="button">Дизайн</button></li>
             <li class="btn__item"><button class="btn" type="button">Маркетинг</button></li>
           </ul>
-          
+
           <ul class="goods__list list">
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgheadphones.jpg" srcset="img/imgheadphones.jpg 1x, img/2x/p1.jpg 2x" alt="Маркетинг" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/crya-mobile.jpg 1x, ./img/mobile/crya-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/crya-tablet.jpg 1x, ./img/tablet/crya-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/crya.jpg 1x, ./img/desktop/crya-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/crya.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
                   </div>
-              <div class="goods__box">
-              <h2 class="goods__title">Проєкт Prime</h2>
-              <p class="goods__text">Маркетинг</p>
-              </div>
+                </div>
+                <div class="goods__box goods__box--first">
+                  <h2 class="goods__title">Технокряк</h2>
+                  <p class="goods__text">Веб-сайт</p>
+                </div>
               </a>
             </li>
-              
+
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgboxes.jpg" srcset="img/imgboxes.jpg 1x, img/2x/p2.jpg 2x" alt="Додаток" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/poster-mobile.jpg 1x, ./img/mobile/poster-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/poster-tablet.jpg 1x, ./img/tablet/poster-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/poster.jpg 1x, ./img/desktop/poster-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/poster.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Проєкт Boxes</h2>
-              <p class="goods__text">Додаток</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="goods__text">Дизайн</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imginsp.jpg" srcset="img/imginsp.jpg 1x, img/2x/p3.jpg 2x"  alt="Веб-сай" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/sea-mobile.jpg 1x, ./img/mobile/sea-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/sea-tablet.jpg 1x, ./img/tablet/sea-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/sea.jpg 1x, ./img/desktop/sea-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/sea.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
-              <div class="goods__box">
-              <h2 class="goods__title">Inspiration has no Borders</h2>
-              <p class="goods__text">Веб-сайт</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Ресторан Seafood</h2>
+                  <p class="goods__text">Додаток</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgtec-crya.jpg"  srcset="img/imgtec-crya.jpg 1x, img/2x/p4.jpg 2x" alt="Технокряк" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div></div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/headphones-mobile.jpg 1x, ./img/mobile/headphones-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/headphones-tablet.jpg 1x, ./img/tablet/headphones-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/headphones.jpg 1x, ./img/desktop/headphones-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/headphones.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Технокряк</h2>
-              <p class="goods__text">Веб-сайт</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Проєкт Prime</h2>
+                  <p class="goods__text">Маркетинг</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgposter.jpg " srcset="img/imgposter.jpg 1x, img/2x/p5.jpg 2x" alt="Постер" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div></div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/box-mobile.jpg 1x, ./img/mobile/box-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/box-tablet.jpg 1x, ./img/tablet/box-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/box.jpg 1x, ./img/desktop/box-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/box.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Постер New Orlean vs Golden Star</h2>
-              <p class="goods__text">Дизайн</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Проєкт Boxes</h2>
+                  <p class="goods__text">Додаток</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgsea.jpg" srcset="img/imgsea.jpg 1x, img/2x/p6.jpg 2x"  alt="Ресторан" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div></div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/display-mobile.jpg 1x, ./img/mobile/display-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/display-tablet.jpg 1x, ./img/tablet/display-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/display.jpg 1x, ./img/desktop/display-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/display.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Ресторан Seafood</h2>
-              <p class="goods__text">Додаток</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Inspiration has no Borders</h2>
+                  <p class="goods__text">Веб-сайт</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgbuisnes.jpg" srcset="img/imgbuisnes.jpg 1x, img/2x/p7.jpg 2x" alt="Додаток" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div></div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/book-mobile.jpg 1x, ./img/mobile/book-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/book-tablet.jpg 1x, ./img/tablet/book-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/book.jpg 1x, ./img/desktop/book-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/book.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Growing Business</h2>
-              <p class="goods__text">Додаток</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Видання Limited Edition</h2>
+                  <p class="goods__text">Дизайн</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imglab.jpg" srcset="img/imglab.jpg 1x, img/2x/p8.jpg 2x" alt="Маркетинг" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div></div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/lab-mobile.jpg 1x, ./img/mobile/lab-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/lab-tablet.jpg 1x, ./img/tablet/lab-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/lab.jpg 1x, ./img/desktop/lab-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/lab.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Проєкт LAB</h2>
-              <p class="goods__text">Маркетинг</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Проєкт LAB</h2>
+                  <p class="goods__text">Маркетинг</p>
+                </div></a
+              >
             </li>
 
             <li class="goods__item">
               <a href="" class="goods__link link">
                 <div class="item__overlay">
-              <img src="img/imgle.jpg" srcset="img/imgle.jpg 1x, img/2x/p9.jpg 2x" alt="" class="goods__picture" />
-              <div class="overlay__container">
-                <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div></div>
+                  <picture>
+                    <source
+                      srcset="./img/mobile/buisness-mobile.jpg 1x, ./img/mobile/buisness-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/tablet/buisness-tablet.jpg 1x, ./img/tablet/buisness-tablet-2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                    srcset="./img/desktop/buisness.jpg 1x, ./img/desktop/buisness-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <img src="./img/desktop/buisness.jpg" alt="Технокряк" />
+                  </picture>
+                  <div class="overlay__container">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
 
-              <div class="goods__box">
-              <h2 class="goods__title">Видання Limited Edition</h2>
-              <p class="goods__text">Дизайн</p></div></a>
+                <div class="goods__box">
+                  <h2 class="goods__title">Видання Limited Edition</h2>
+                  <p class="goods__text">Дизайн</p>
+                </div></a
+              >
             </li>
           </ul>
         </div>
@@ -196,117 +383,129 @@
 
     <footer class="page-footer">
       <div class="container footer">
-          <div class="footer__left">
-              <a class="footer-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
-              
-              <address>
-              <ul class="adress__list list">
-                  <li class="adress__item">
-                  <a
+        <div class="footer__left">
+          <a class="footer-logo" href="./index.html"><span class="blue-txt">Web</span>Studio</a>
+
+          <address>
+            <ul class="adress__list list">
+              <li class="adress__item">
+                <a
                   href="https://goo.gl/maps/MCXRP4PtPJVevDJ69"
                   rel="n"
                   class="adress__first footer__curent"
                   >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+                >
               </li>
               <li class="adress__item">
-              <a class="adress__link footer__curent" href="mailto:info@devstudio.com"
+                <a class="adress__link footer__curent" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
-              >
+                >
               </li>
               <li class="adress__item">
-              <a class="adress__link footer__curent" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="adress__link footer__curent" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
-          </ul>
+            </ul>
           </address>
-          </div>
-      
-          <div class="footer__right">
-              <h3 class="footer__right-title">приєднуйтесь</h3>
-              <ul class="footer__list list">
-                  <li class="footer__item">
-                      <a href="" class="footer__link">
-                          <svg class="footer__icon">
-                              <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                          </svg>
-                      </a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="" class="footer__link">
-                          <svg class="footer__icon">
-                              <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                          </svg>
-                      </a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="" class="footer__link">
-                          <svg class="footer__icon">
-                              <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                          </svg>
-                      </a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="" class="footer__link">
-                          <svg class="footer__icon">
-                              <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                          </svg>
-                      </a>
-                  </li>
-              </ul>
-          </div>
+        </div>
 
-          <div class="form__footer">
-              <p class="form__description">Підпишіться на розсилку</p>
-              <form action="" class="footer-modal">                   
-                  <label for="mail"></label>
-                     <div class="form__container">
-                      <input class="footer__email" type="email" required name="email" id="footer-email" placeholder="E-mail">
-                      <button class="subscribe" type="submit">Підписатися
-                          <svg class="subscribe__icon">
-                              <use href="./img/symbol-defs.svg#icon-send"></use>
-                          </svg>
-                      </button>
-                     </div> 
-              </form>
-          </div>
+        <div class="footer__right">
+          <h3 class="footer__right-title">приєднуйтесь</h3>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
+                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
+                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="form__footer">
+          <p class="form__description">Підпишіться на розсилку</p>
+          <form action="" class="footer-modal">
+            <label for="mail"></label>
+            <div class="form__container">
+              <input
+                class="footer__email"
+                type="email"
+                required
+                name="email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe" type="submit">
+                Підписатися
+                <svg class="subscribe__icon">
+                  <use href="./img/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-  </footer>
+    </footer>
 
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-      <svg class="menu-burger" width="40" height="40">
-        <use href="./img/symbol-defs.svg#icon-close"></use>
-      </svg>
-    </button>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-burger" width="40" height="40">
+          <use href="./img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
 
-    <ul class="mobile-menu list">
-      <li><a href="index.html" class="mobile-link link ">Студія</a></li>
-      <li><a href="portfolio.html" class="mobile-link mobile--cur link">Портфоліо</a></li>
-      <li><a href="" class="mobile-link link">Контакти</a></li>
-    </ul>
+      <ul class="mobile-menu list">
+        <li><a href="index.html" class="mobile-link link">Студія</a></li>
+        <li><a href="portfolio.html" class="mobile-link mobile--cur link">Портфоліо</a></li>
+        <li><a href="" class="mobile-link link">Контакти</a></li>
+      </ul>
 
-    <ul class="mobile-contact list">
-        <li><a href="" class="mobile-contact__link mobile-contact__link--tel link">+38 096 111 11 11</a></li>
+      <ul class="mobile-contact list">
+        <li>
+          <a href="" class="mobile-contact__link mobile-contact__link--tel link"
+            >+38 096 111 11 11</a
+          >
+        </li>
         <li><a href="" class="mobile-contact__link link">info@devstudio.com</a></li>
-    </ul>
+      </ul>
 
-    <ul class="mobile-soc list">
+      <ul class="mobile-soc list">
         <li class="soc_item"><a href="" class="soc__link link">Instagram</a></li>
         <li class="soc_item"><a href="" class="soc__link link">Twitter</a></li>
         <li class="soc_item"><a href="" class="soc__link link">Facebook</a></li>
         <li class="soc_item"><a href="" class="soc__link link">LinkedIn</a></li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-
-  <script defer src="script/mobile-menu.js"></script>
-</body>
+    <script defer src="script/mobile-menu.js"></script>
+  </body>
 </html>
